@@ -6,20 +6,17 @@
 body {
     background-color: lightgray;
     font-family: Arial, Helvetica, sans-serif;
-    
 }
 
 #container {
-    width: 1100px;
+    width: 1500px;
     margin: 0px auto;
     border: 1px solid black;
-    
-    
 }
 
 header {
-    background: red;
-    height: 100px;
+    background: #FF8C00;
+    height: 60px;
     width: 100%;
     margin: 0px;
     text-align: center;
@@ -27,9 +24,17 @@ header {
     border-bottom: 3px solid black;
 }
 
+#logo {
+    float: left;
+    margin: 1px;
+    height: 60px;
+    left: 25px;
+    line-height: initial;
+}
+
 nav {
     background: lightblue;
-    height: 50px;
+    height: 60px;
     border-bottom: 1px solid black
 }
 
@@ -46,21 +51,21 @@ nav ul li {
 
 #content {
     float: left;
-    width: 80%; 
+    width: 80%;
     min-height: 800px;
     background: green;
     padding: 0px;
 }
 
-.article:first-child{
+.article:first-child {
     border-top: 1px solid #eee;
 }
 
-.article h2{
+.article h2 {
     font-size: 25px;
 }
 
-.article{
+.article {
     color: white;
     margin-top: 15px;
     margin-bottom: 15px;
