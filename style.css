@@ -15,34 +15,87 @@ body {
 }
 
 header {
-    background: #FF8C00;
-    height: 60px;
-    width: 100%;
-    margin: 0px;
-    text-align: center;
-    color: white;
-    border-bottom: 3px solid black;
+    position: fixed;
+    background-color: white;
+    padding-right: 895px;
+    border-radius: 1px;
+    box-shadow: 0 0 15px teal;
 }
 
 #logo {
-    float: left;
-    margin: 1px;
-    height: 60px;
-    left: 25px;
-    line-height: initial;
+    position: relative;
+    height: 80px;
+    top: 10px;
 }
 
-nav {
-    background: lightblue;
-    height: 60px;
-    border-bottom: 1px solid black
-}
+.menu-padre {}
 
-nav ul li {
-    float: left;
+.menu-madre {}
+
+.menu-hijo {
+    position: relative;
+    color: black;
+    left: 800px;
     list-style: none;
-    margin: 10px;
-    line-height: 30px;
+    bottom: 45px;
+    background-color: white;
+}
+
+.ingresar {
+    background-color: orange;
+    margin: 30px;
+    padding: 10px 10px;
+    border-radius: 15px;
+}
+
+li a {
+    padding: 20px;
+    position: relative;
+}
+
+.contenedor-imagen1 {
+    padding-top: 300px;
+    padding-bottom: 100px;
+    background-color: white;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+}
+
+.inf-a {
+    display: inline-block;
+    height: 250px;
+    width: 300px;
+    text-align: center;
+}
+
+.inf-b {
+    display: inline-block;
+    height: 250px;
+    width: 300px;
+    text-align: center;
+}
+
+.inf-c {
+    display: inline-block;
+    height: 250px;
+    width: 300px;
+    text-align: center;
+}
+
+.img-servicios {
+    height: 75%;
+    width: 80%;
+}
+
+.img-nosotros {
+    height: 75%;
+    width: 80%;
+}
+
+.img-citas {
+    height: 75%;
+    width: 80%;
 }
 
 .clearfix {
@@ -53,7 +106,15 @@ nav ul li {
     float: left;
     width: 80%;
     min-height: 800px;
-    background: green;
+    background: #E6E6FA;
+    padding: 0px;
+}
+
+#content2 {
+    float: left;
+    width: 100%;
+    min-height: 800px;
+    background: #E6E6FA;
     padding: 0px;
 }
 
@@ -65,8 +126,20 @@ nav ul li {
     font-size: 25px;
 }
 
+.article p {
+    color: black;
+}
+
 .article {
-    color: white;
+    color: #FFA500;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.article2 {
+    color: black;
     margin-top: 15px;
     margin-bottom: 15px;
     padding-bottom: 10px;
@@ -77,7 +150,7 @@ aside {
     float: left;
     width: 20%;
     min-height: 800px;
-    background: orange;
+    background-color: rgb(255, 255, 255);
     padding: 0px;
 }
 
@@ -90,4 +163,26 @@ footer {
     color: white;
     text-align: center;
     padding: 0px;
+}
+
+#productos li {
+    list-style: none;
+    overflow: hidden;
+}
+
+.producto1 p {
+    color: blue;
+}
+
+#productos ul[id|=f_] li {
+    display: inline
+}
+
+#productos ul[id|=f_] li:nth-child(4):before {
+    display: block;
+    content: '';
+}
+
+#productos li.list_root {
+    padding-bottom: 20px;
 }
