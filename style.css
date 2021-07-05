@@ -11,7 +11,7 @@ body {
 #container {
     width: 1500px;
     margin: 0px auto;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 header {
@@ -25,10 +25,35 @@ header {
 }
 
 #logo {
-    position: relative;
     height: 80px;
     top: 10px;
 }
+
+.portadaheader {
+    width: 100%;
+    top: 100%;
+    left: 0.5px;
+}
+
+.contenedor-texto {
+    border: 5px solid red;
+    height: 900px;
+    width: 1490px;
+}
+
+.img-portadaheader {
+    width: 100%;
+    top: 100%;
+}
+
+.texto-h3-portadaheader {
+    top: 350px;
+    display: inline-table;
+    height: 50px;
+    padding-top: 200px;
+}
+
+.texto-p-portadaheader {}
 
 .menu-padre {}
 
