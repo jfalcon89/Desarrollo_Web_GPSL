@@ -20,6 +20,8 @@ header {
     padding-right: 895px;
     border-radius: 1px;
     box-shadow: 0 0 15px teal;
+    flex-wrap: wrap;
+    flex: 1;
 }
 
 #logo {
