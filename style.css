@@ -20,8 +20,6 @@ header {
     padding-right: 895px;
     border-radius: 1px;
     box-shadow: 0 0 15px teal;
-    flex-wrap: wrap;
-    flex: 1;
 }
 
 #logo {
@@ -33,53 +31,32 @@ header {
     width: 100%;
     top: 100%;
     left: 0.5px;
-    background: url(imagenes/portadaheader.png) center;
-    background-size: 100%;
 }
 
 .contenedor-texto {
-    height: 800px;
-    width: 1497px;
-    margin-top: 95px;
+    border: 5px solid red;
+    height: 900px;
+    width: 1490px;
 }
 
-
-/* no se esta utilizando esta imagen  */
-
-
-/* .img-portadaheader {
+.img-portadaheader {
     width: 100%;
     top: 100%;
-    height: 800px;
-} */
+}
 
 .texto-h3-portadaheader {
-    color: white;
-    padding-top: 400px;
-    padding-left: 20px;
-    font-size: 30px;
+    top: 350px;
+    display: inline-table;
+    height: 50px;
+    padding-top: 200px;
 }
 
-.texto-p-portadaheader {
-    color: white;
-    padding-top: 20px;
-    padding-left: 45px;
-    font-size: 15;
-}
+.texto-p-portadaheader {}
 
-.botton-cotizar1 {
-    background-color: orange;
-    color: black;
-    padding: 15px;
-    font-size: 15px;
-    border-radius: 15px;
-    margin-left: 140px;
-}
-
-
-}
 .menu-padre {}
+
 .menu-madre {}
+
 .menu-hijo {
     position: relative;
     color: black;
@@ -88,16 +65,19 @@ header {
     bottom: 45px;
     background-color: white;
 }
+
 .ingresar {
     background-color: orange;
     margin: 30px;
     padding: 10px 10px;
     border-radius: 15px;
 }
+
 li a {
     padding: 20px;
     position: relative;
 }
+
 .contenedor-imagen1 {
     padding-top: 300px;
     padding-bottom: 100px;
@@ -106,39 +86,47 @@ li a {
     height: 300px;
     text-align: center;
 }
+
 .inf-a {
     display: inline-block;
     height: 250px;
     width: 300px;
     text-align: center;
 }
+
 .inf-b {
     display: inline-block;
     height: 250px;
     width: 300px;
     text-align: center;
 }
+
 .inf-c {
     display: inline-block;
     height: 250px;
     width: 300px;
     text-align: center;
 }
+
 .img-servicios {
     height: 75%;
     width: 80%;
 }
+
 .img-nosotros {
     height: 75%;
     width: 80%;
 }
+
 .img-citas {
     height: 75%;
     width: 80%;
 }
+
 .clearfix {
     clear: both;
 }
+
 #content {
     float: left;
     width: 80%;
@@ -146,6 +134,7 @@ li a {
     background: #E6E6FA;
     padding: 0px;
 }
+
 #content2 {
     float: left;
     width: 100%;
@@ -153,15 +142,19 @@ li a {
     background: #E6E6FA;
     padding: 0px;
 }
+
 .article:first-child {
     border-top: 1px solid #eee;
 }
+
 .article h2 {
     font-size: 25px;
 }
+
 .article p {
     color: black;
 }
+
 .article {
     color: #FFA500;
     margin-top: 15px;
@@ -169,6 +162,7 @@ li a {
     padding-bottom: 10px;
     border-bottom: 1px solid #eee;
 }
+
 .article2 {
     color: black;
     margin-top: 15px;
@@ -176,6 +170,7 @@ li a {
     padding-bottom: 10px;
     border-bottom: 1px solid #eee;
 }
+
 aside {
     float: left;
     width: 20%;
@@ -183,6 +178,7 @@ aside {
     background-color: rgb(255, 255, 255);
     padding: 0px;
 }
+
 footer {
     float: left;
     left: 50px;
@@ -193,20 +189,25 @@ footer {
     text-align: center;
     padding: 0px;
 }
+
 #productos li {
     list-style: none;
     overflow: hidden;
 }
+
 .producto1 p {
     color: blue;
 }
+
 #productos ul[id|=f_] li {
     display: inline
 }
+
 #productos ul[id|=f_] li:nth-child(4):before {
     display: block;
     content: '';
 }
+
 #productos li.list_root {
     padding-bottom: 20px;
 }
