@@ -37,10 +37,48 @@ header {
     background-size: 100%;
 }
 
+.portadaheader2 {
+    height: 600px;
+    width: 1497px;
+    /* top: 100%;
+    left: 0.5px; */
+    background: url(/imagenes/quienes_somos.jpg) center;
+    background-size: 100%;
+}
+
 .contenedor-texto {
     height: 800px;
     width: 1497px;
     margin-top: 95px;
+}
+
+.vacio1 {
+    background-color: yellowgreen;
+    height: 200px;
+    margin: none;
+    padding: none;
+    border: none;
+}
+
+.caja-pag-productos {
+    background-color: cyan;
+    height: 500px;
+    bottom: 50px;
+}
+
+.caja-pag-contactos {
+    background-color: yellow;
+    height: 500px;
+}
+
+.pag-contactos {
+    font-size: 75px;
+    text-align: center;
+}
+
+.pag-productos {
+    font-size: 75px;
+    text-align: center;
 }
 
 
