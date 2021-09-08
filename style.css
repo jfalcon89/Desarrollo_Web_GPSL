@@ -4,33 +4,129 @@
 }
 
 body {
-    background-color: lightgray;
+    background-color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 #container {
-    width: 1500px;
+    width: 100%;
     margin: 0px auto;
     /* border: 1px solid black; */
 }
 
+
+/* navegacion cabecera inicio  */
+
+
+/* primer bloque */
+
 header {
     position: fixed;
     background-color: white;
-    padding-right: 895px;
     border-radius: 1px;
     box-shadow: 0 0 15px teal;
-    flex-wrap: wrap;
-    flex: 1;
+    width: 100%;
+}
+
+.navegacion {
+    height: 70px;
+    width: 100%;
+    position: relative;
+}
+
+.navegacion>ul {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    height: 70px;
+    width: 1200px;
+    position: absolute;
+    top: 30px;
+    left: 300px;
+}
+
+.navegacion ul li a {
+    /* text-transform: uppercase; */
+    margin: 20px 20px;
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+#navegacion ul li {
+    /* propiedad obligarotia para que el sub-menu respete desaparecer el sub-menu 
+    position: relative; */
+    position: absolute;
+    float: left;
+}
+
+.navegacion a:hover {
+    color: orange;
+    border-bottom: solid 2px cadetblue;
 }
 
 #logo {
     height: 80px;
-    top: 10px;
+    float: left;
+    margin-left: 150px;
+}
+
+.ingresar {
+    background-color: orange;
+    border-radius: 15px;
+    color: black;
+    padding: 1px;
+}
+
+.ingresar:hover {
+    background-color: rgb(143, 143, 143);
+    color: black;
+}
+
+
+/* sub-menu inicio */
+
+.navegacion ul ul {
+    display: none;
+    position: absolute;
+    bottom: -130px;
+}
+
+.navegacion ul li ul li {
+    list-style: none;
+    background-color: white;
+    border-bottom: solid 1px orange;
+    padding-top: 15px;
+    padding-right: 60px;
+    padding-bottom: 15px;
+}
+
+.navegacion ul ul a {
+    /* opacity: 0.5; */
+}
+
+.navegacion ul li:hover>ul {
+    display: block;
+}
+
+.navegacion ul ul li:hover {
+    background-color: #2980B9
+}
+
+
+/* segundo bloque inicio */
+
+.separador {
+    height: 81px;
+    margin: none;
+    padding: none;
+    border: none;
 }
 
 .portadaheader {
     width: 100%;
+    height: 600px;
     top: 100%;
     left: 0.5px;
     background: url(imagenes/portadaheader.png) center;
@@ -39,25 +135,69 @@ header {
 
 .portadaheader2 {
     height: 600px;
-    width: 1497px;
+    width: 100%;
     /* top: 100%;
     left: 0.5px; */
     background: url(/imagenes/quienes_somos.jpg) center;
     background-size: 100%;
 }
 
-.contenedor-texto {
-    height: 800px;
-    width: 1497px;
-    margin-top: 95px;
+.texto-p-portadaheader {
+    color: black;
+    padding-top: 300px;
+    font-size: 40px;
+    text-align: center;
 }
 
-.vacio1 {
-    background-color: yellowgreen;
-    height: 200px;
-    margin: none;
-    padding: none;
-    border: none;
+.contenedor-texto {
+    text-align: center;
+}
+
+.texto-h3-portadaheader {
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.texto-h3-portadaheader a {
+    background-color: #2980B9;
+    font-size: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0 0 15px teal;
+}
+
+.texto-h3-portadaheader a:hover {
+    background-color: #5e9bc4;
+}
+
+.botton-cotizar1 {
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.botton-cotizar1 a {
+    font-size: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    /* box-shadow: 0 0 15px teal; */
+    border: solid 1px black;
+}
+
+.botton-cotizar1 a:hover {
+    background-color: transparent;
+    background-color: white;
 }
 
 .caja-pag-productos {
@@ -91,50 +231,7 @@ header {
     height: 800px;
 } */
 
-.texto-h3-portadaheader {
-    color: white;
-    padding-top: 400px;
-    padding-left: 20px;
-    font-size: 30px;
-}
 
-.texto-p-portadaheader {
-    color: white;
-    padding-top: 20px;
-    padding-left: 45px;
-    font-size: 15;
-}
-
-.botton-cotizar1 {
-    background-color: orange;
-    color: black;
-    padding: 15px;
-    font-size: 15px;
-    border-radius: 15px;
-    margin-left: 140px;
-}
-
-
-}
-.menu-padre {}
-.menu-madre {}
-.menu-hijo {
-    position: relative;
-    color: black;
-    left: 800px;
-    list-style: none;
-    bottom: 45px;
-    background-color: white;
-}
-.ingresar {
-    background-color: orange;
-    margin: 30px;
-    padding: 10px 10px;
-    border-radius: 15px;
-}
-li a {
-    padding: 20px;
-    position: relative;
 }
 .contenedor-imagen1 {
     padding-top: 300px;
