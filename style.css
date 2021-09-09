@@ -30,7 +30,7 @@ header {
 }
 
 .navegacion {
-    height: 70px;
+    height: 80px;
     width: 100%;
     position: relative;
 }
@@ -38,9 +38,9 @@ header {
 .navegacion>ul {
     list-style: none;
     display: flex;
-    justify-content: right;
+    justify-content: center;
     height: 70px;
-    width: 1200px;
+    width: 100%;
     position: absolute;
     top: 30px;
     left: 300px;
@@ -70,7 +70,11 @@ header {
 #logo {
     height: 80px;
     float: left;
-    margin-left: 150px;
+    /* margin-left: 150px; */
+    position: relative;
+    /* justify-content: center; */
+    left: -550px;
+    top: -30px;
 }
 
 .ingresar {
@@ -130,6 +134,7 @@ header {
     height: 600px;
     background: url(imagenes/portadaheader.png) center;
     background-size: 100%;
+    background-attachment: scroll;
 }
 
 .texto-p-portadaheader {
@@ -230,7 +235,7 @@ header {
 }
 
 
-/* tercera seccion pagina principal inicio */
+/* seccion 3 pagina principal inicio */
 
 .contenedor-imagen-seccion3 {
     /* padding-top: 300px; */
@@ -266,7 +271,7 @@ header {
     display: inline-block;
     width: 350px;
     height: 300px;
-    text-align: center;
+    /* text-align: center; */
     /* border: solid 1px black; */
     border-left-width: 0px;
     box-shadow: 0 0 15px rgb(114, 114, 114);
@@ -379,6 +384,119 @@ header {
 .contenedor-texto-seccion4 .contenedor-texto-seccion4 {
     background-color: burlywood;
 }
+
+
+/* inicio seccion 5 de la pagina (nuestros servicios) */
+
+.contenedor-texto-seccion5 {
+    background-color: rgb(225, 225, 225);
+    width: 1400px;
+    height: 200px;
+    position: relative;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+}
+
+.contenedor-texto-seccion5 h1 {
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 70px;
+    margin-bottom: 40px;
+    color: orange;
+}
+
+.contenedor-texto-seccion5 p {
+    margin-bottom: 70px;
+}
+
+
+/* inicio seccion 6 */
+
+.contenedor-texto-seccion6 {
+    /* background-color: palegoldenrod; */
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    margin-top: 150px;
+    padding-top: 50px;
+}
+
+.texto-seccion6 {
+    width: 100%;
+    height: 30%;
+    background-color: lawngreen;
+}
+
+.texto-seccion6 h1 {
+    padding: 30px;
+    padding-right: 800px;
+    font-size: 50px;
+}
+
+.texto-seccion6 p {
+    /* background-color: rgb(189, 159, 169); */
+    padding: 30px;
+    padding-right: 520px;
+    font-size: 18px;
+    color: rgb(148, 148, 148);
+    text-align: inherit;
+}
+
+
+/* padre */
+
+.sub-contenedor-texto-seccion6 {
+    width: 100%;
+    height: 350px;
+    position: relative;
+    justify-content: center;
+    background-color: red;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    border-left-width: 0px;
+    left: 0;
+    right: 0;
+}
+
+
+/* hijo */
+
+.sub-contenedor-texto-seccion6 div {
+    position: static;
+    width: 400px;
+    height: 350px;
+    background-color: purple;
+    display: inline-block;
+    margin: auto;
+    border-left-width: 0px;
+    /* float: left; */
+}
+
+
+/* nieto */
+
+.sub-contenedor-texto-seccion6 div article {
+    width: 400px;
+    height: 150px;
+    background-color: rgb(233, 233, 233);
+    float: left;
+    position: absolute;
+    top: 30px;
+}
+
+
+/* vinieto */
+
+.sub-contenedor-texto-seccion6 div div h2 {}
+
+.sub-contenedor-texto-seccion6 div div p {}
+
+
+/* -------------------------------------------------- */
 
 .clearfix {
     clear: both;
