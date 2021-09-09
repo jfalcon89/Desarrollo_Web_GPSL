@@ -26,6 +26,7 @@ header {
     border-radius: 1px;
     box-shadow: 0 0 15px teal;
     width: 100%;
+    z-index: 1;
 }
 
 .navegacion {
@@ -167,11 +168,7 @@ header {
 
 .texto-h3-portadaheader a:hover {
     background-color: #5e9bc4;
-<<<<<<< HEAD
-    transition-duration: 0.5s;
-=======
     transition-duration: 0.3s;
->>>>>>> d6efce9bdb2227458d33616b61923ad797ff6a86
 }
 
 .botton-cotizar1 {
@@ -196,9 +193,6 @@ header {
 .botton-cotizar1 a:hover {
     background-color: transparent;
     background-color: white;
-<<<<<<< HEAD
-    transition-duration: 1s;
-=======
     transition-duration: 0.3s;
 }
 
@@ -212,7 +206,6 @@ header {
     left: 0.5px; */
     background: url(/imagenes/quienes_somos.jpg) center;
     background-size: 100%;
->>>>>>> d6efce9bdb2227458d33616b61923ad797ff6a86
 }
 
 .caja-pag-productos {
@@ -244,7 +237,7 @@ header {
     /* padding-bottom: 100px; */
     background-color: rgb(255, 255, 255);
     width: 100%;
-    height: 1000px;
+    height: 400px;
     position: relative;
 }
 
@@ -276,7 +269,7 @@ header {
     text-align: center;
     /* border: solid 1px black; */
     border-left-width: 0px;
-    /* box-shadow: 0 0 15px rgb(114, 114, 114); */
+    box-shadow: 0 0 15px rgb(114, 114, 114);
     top: -50px;
     left: 0;
     right: 0;
@@ -287,9 +280,10 @@ header {
     /* justify-content: center; */
 }
 
-.contenedor-imagen-seccion3 div:hover {
-    /* background-color: rgb(184, 184, 184);
-    transition-duration: 00.3s; */
+.contenedor-imagen-seccion3 .seccion div:hover {
+    /* background-color: rgb(184, 184, 184); */
+    transition-duration: 00.3s;
+    box-shadow: 0 0 30px teal;
 }
 
 .contenedor-imagen-seccion3 div img {
@@ -322,6 +316,68 @@ header {
 .img-citas {
     height: 100%;
     width: 100%;
+}
+
+.img-clientes {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* seccion 4 inicio  */
+
+.contenedor-texto-seccion4 {
+    position: relative;
+    width: 1400px;
+    height: 400px;
+    background-color: transparent;
+    justify-content: center;
+    margin: auto;
+    border-bottom: solid 150px white;
+}
+
+.texto-seccion4 {
+    background-color: transparent;
+    width: 40%;
+    /* height: 400px; */
+    float: left;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 40px;
+}
+
+.texto-seccion4 h1 {
+    padding-bottom: 20px;
+}
+
+.texto-seccion4 p {
+    padding-bottom: 20px;
+}
+
+.texto-seccion4 h3 {
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+.texto-seccion4 a {
+    background-color: teal;
+}
+
+.texto-seccion4 a:hover {
+    background-color: rgb(2, 72, 72);
+}
+
+.seccion4-derecha {
+    background: url(/imagenes/quienes-somos1.jpg) center;
+    background-size: 100%;
+    width: 50%;
+    height: 400px;
+    /* display: inline-block; */
+    float: left;
+}
+
+.contenedor-texto-seccion4 .contenedor-texto-seccion4 {
+    background-color: burlywood;
 }
 
 .clearfix {
