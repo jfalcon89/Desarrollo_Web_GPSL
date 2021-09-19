@@ -138,6 +138,8 @@ header {
     height: 600px;
     background: url(imagenes/portadaheader.png) center;
     background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
     /* background-attachment: scroll; */
 }
 
@@ -163,8 +165,8 @@ header {
 }
 
 .texto-h3-portadaheader a {
-    background-color: #2980B9;
-    font-size: 15px;
+    background-color: #ff9900;
+    font-size: 16px;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 10px;
@@ -172,7 +174,7 @@ header {
     border-radius: 20px;
     text-decoration: none;
     color: black;
-    box-shadow: 0 0 15px teal;
+    /* box-shadow: 0 0 15px rgb(255, 132, 0); */
 }
 
 .texto-h3-portadaheader a:hover {
@@ -244,7 +246,7 @@ header {
 .contenedor-imagen-seccion3 {
     background-color: rgb(255, 255, 255);
     width: 100%;
-    height: 400px;
+    /* height: 400px; */
     position: relative;
     display: flex;
     justify-content: center;
@@ -252,7 +254,7 @@ header {
 
 .contenedor-imagen-seccion3 .seccion {
     width: 100%;
-    height: 300px;
+    /* height: 300px; */
     justify-content: center;
     background-color: white;
     border-left-width: 0px;
@@ -290,6 +292,14 @@ header {
 .contenedor-imagen-seccion3 div h3 {
     display: flex;
     font-size: 25px;
+}
+
+.contenedor-imagen-seccion3 div .titulo {
+    color: rgb(0, 0, 0);
+    background-color: #ff9900;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: bolder;
 }
 
 .contenedor-imagen-seccion3 div p {
@@ -334,7 +344,7 @@ header {
 .contenedor-texto-seccion4 {
     position: relative;
     width: 100%;
-    height: 400px;
+    /* height: 400px; */
     background-color: transparent;
     justify-content: center;
     margin: auto;
@@ -344,12 +354,12 @@ header {
 
 .texto-seccion4 {
     /* background-color: gray; */
-    width: 600px;
+    width: 20%;
     /* height: 400px; */
     /* float: left; */
     /* padding-left: 70px; */
     /* padding-right: 70px; */
-    padding-top: 100px;
+    padding-top: 80px;
     display: inline-block;
     vertical-align: top;
 }
@@ -368,18 +378,20 @@ header {
 }
 
 .texto-seccion4 a {
-    background-color: teal;
+    background-color: #ff9900;
 }
 
 .texto-seccion4 a:hover {
-    background-color: rgb(2, 72, 72);
+    background-color: #925800;
 }
 
 .seccion4-derecha {
     background: url(/imagenes/quienes-somos1.jpg) center;
     background-size: 100%;
-    width: 600px;
-    height: 400px;
+    width: 30%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
     /* display: inline-block; */
     /* float: left; */
     display: inline-block;
@@ -421,7 +433,7 @@ header {
 .contenedor-texto-seccion6 {
     /* background-color: palegoldenrod; */
     width: 100%;
-    height: 1500px;
+    /* height: 1500px; */
     position: relative;
     margin: auto;
     text-align: center;
@@ -431,7 +443,7 @@ header {
 
 .texto-seccion6 {
     width: 100%;
-    height: 200px;
+    /* height: 200px; */
     /* background-color: lawngreen; */
 }
 
@@ -444,15 +456,15 @@ header {
 .texto-seccion6 p {
     /* background-color: rgb(189, 159, 169); */
     padding: 30px;
-    padding-right: 520px;
+    /* padding-right: 520px; */
     font-size: 18px;
     color: rgb(148, 148, 148);
-    text-align: inherit;
+    text-align: center;
 }
 
 .sub-contenedor-texto-seccion6 {
     width: 100%;
-    height: 350px;
+    /* height: 350px; */
     position: relative;
     justify-content: center;
     /* background-color: red; */
@@ -462,7 +474,7 @@ header {
     border-left-width: 0px;
     left: 0;
     right: 0;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 .sub-contenedor-texto-seccion6 div {
@@ -478,6 +490,7 @@ header {
     box-shadow: 0 0 30px rgb(136, 136, 136);
     margin-left: 8px;
     margin-right: 8px;
+    margin-bottom: 20px;
 }
 
 .sub-contenedor-texto-seccion6 div:hover {
@@ -490,7 +503,7 @@ header {
     height: 150px;
     /* background-color: white; */
     float: left;
-    position: absolute;
+    /* position: absolute; */
     top: 30px;
 }
 
@@ -515,7 +528,7 @@ header {
     border-bottom: solid 5px orange;
     padding-left: 0px;
     padding-right: 299px;
-    padding-bottom: 20px;
+    padding-bottom: 43px;
     text-decoration: none;
     color: orange;
 }
