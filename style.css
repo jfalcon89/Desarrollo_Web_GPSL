@@ -36,91 +36,144 @@ header {
 .navegacion {
     height: 80px;
     width: 100%;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    /* position: relative; */
 }
 
-.navegacion>ul {
+.navegacion .menu-principal {
     list-style: none;
     display: flex;
     justify-content: center;
-    height: 70px;
-    width: 100%;
-    position: absolute;
-    top: 30px;
-    left: 300px;
+    align-items: center;
+    /* height: 70px; */
+    width: 900px;
+    /* position: absolute; */
+    /* top: 30px; */
+    /* left: 300px; */
 }
 
-.navegacion ul li a {
+#logo {
+    display: flex;
+    height: 80px;
+    padding-right: 40%;
+    /* float: left; */
+    /* margin-left: 150px; */
+    /* position: relative; */
+    /* justify-content: center; */
+    /* left: -550px; */
+    /* top: -30px; */
+}
+
+.menu-principal .item-menu {
+    display: flex;
+    height: 100%;
+    width: 130px;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-principal .item-menu a {
     /* text-transform: uppercase; */
-    margin: 20px 20px;
+    /* margin: 20px 20px; */
     text-decoration: none;
     color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    height: 100%;
+    width: 130px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 #navegacion ul li {
     /* propiedad obligarotia para que el sub-menu respete desaparecer el sub-menu 
     position: relative; */
-    position: absolute;
-    float: left;
+    /* position: absolute; */
+    /* float: left; */
 }
 
 .navegacion a:hover {
     color: orange;
-    border-bottom: solid 2px cadetblue;
+    /* border-bottom: solid 2px cadetblue; */
 }
 
-#logo {
-    height: 80px;
-    float: left;
-    /* margin-left: 150px; */
-    position: relative;
-    /* justify-content: center; */
-    left: -550px;
-    top: -30px;
-}
-
-.ingresar {
+#ingresar {
     background-color: orange;
     border-radius: 15px;
     color: black;
     padding: 1px;
+    height: 40px;
 }
 
-.ingresar:hover {
+#ingresar:hover {
     background-color: rgb(143, 143, 143);
     color: black;
 }
 
 
-/* sub-menu inicio */
+/* sub-menu-quienes-somos inicio */
 
-.navegacion ul ul {
-    display: none;
+.sub-menu-quienes-somos {
+    /* display: none; */
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    bottom: -130px;
+    bottom: -205px;
+    display: none;
 }
 
-.navegacion ul li ul li {
+.sub-menu-quienes-somos .sub-item-menu-quienes-somos {
     list-style: none;
     background-color: white;
     border-bottom: solid 1px orange;
-    padding-top: 15px;
-    padding-right: 60px;
-    padding-bottom: 15px;
+    margin-left: 80px;
 }
 
-.navegacion ul ul a {
-    /* opacity: 0.5; */
+.sub-menu-quienes-somos .sub-item-menu-quienes-somos a {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 10px;
+}
+
+
+/* sub-menu-servicio inicio */
+
+.sub-menu-servicios {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: -308px;
+    display: none;
+}
+
+.sub-menu-servicios .sub-item-menu-servicios {
+    list-style: none;
+    background-color: white;
+    border-bottom: solid 1px orange;
+    margin-left: 120px;
+    /* padding-top: 15px; */
+    /* padding-right: 60px; */
+    /* padding-bottom: 15px; */
+}
+
+.sub-menu-servicios .sub-item-menu-servicios a {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 10px;
 }
 
 .navegacion ul li:hover>ul {
-    display: block;
+    display: flex;
+    transition: 0.5s;
 }
 
-.navegacion ul ul li:hover {
-    background-color: #2980B9
+.navegacion ul ul li a:hover {
+    background-color: #2980B9;
+    transition: 0.5s;
 }
 
 .separador {
@@ -133,19 +186,79 @@ header {
 
 /* seccion-2 */
 
-.portadaheader {
+
+/* slide */
+
+.slide-contenedor {
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slide-contenedor ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: cambio 20s linear infinite alternate;
+}
+
+.slide-contenedor li {
     width: 100%;
-    height: 600px;
-    background: url(imagenes/portadaheader.png) center;
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
+    list-style: none;
+}
+
+.slide-contenedor img {
+    width: 100%;
+}
+
+@keyframes cambio {
+    0% {
+        margin-left: 0%;
+    }
+    20% {
+        margin-left: 0%;
+    }
+    25% {
+        margin-left: -100%;
+    }
+    45% {
+        margin-left: -100%;
+    }
+    50% {
+        margin-left: -200%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    75% {
+        margin-left: -300%;
+    }
+    100% {
+        margin-left: -300%;
+    }
+}
+
+
+/* slide */
+
+.portadaheader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+    /* height: 600px; */
+    /* background: url(imagenes/portadaheader.png) center; */
+    /* background-size: 100%; */
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
     /* background-attachment: scroll; */
 }
 
 .texto-p-portadaheader {
+    display: flex;
     color: black;
-    padding-top: 200px;
+    padding-top: 100px;
     font-size: 40px;
     text-align: center;
     /* border: solid 1px black; */
@@ -155,10 +268,13 @@ header {
 }
 
 .contenedor-texto {
+    display: flex;
     text-align: center;
+    flex-direction: column;
 }
 
 .texto-h3-portadaheader {
+    display: flex;
     color: white;
     text-align: center;
     padding-top: 20px;
@@ -186,6 +302,7 @@ header {
     color: white;
     text-align: center;
     padding-top: 20px;
+    padding-bottom: 100px;
 }
 
 .botton-cotizar1 a {
@@ -199,11 +316,12 @@ header {
     color: black;
     /* box-shadow: 0 0 15px teal; */
     border: solid 1px black;
+    background-color: #5e9bc4;
 }
 
 .botton-cotizar1 a:hover {
     background-color: transparent;
-    background-color: white;
+    background-color: #2080c0;
     transition-duration: 0.3s;
 }
 
@@ -271,10 +389,10 @@ header {
     height: 250px;
     border-left-width: 0px;
     box-shadow: 0 0 15px rgb(114, 114, 114);
-    top: -50px;
+    /* top: -50px; */
     left: 0;
     right: 0;
-    margin: 5px;
+    /* margin: 5px; */
     background-color: white;
     position: relative;
     border: solid 1px gray;
@@ -342,39 +460,61 @@ header {
 /* seccion 4 inicio  */
 
 .contenedor-texto-seccion4 {
-    position: relative;
+    display: flex;
     width: 100%;
     /* height: 400px; */
     background-color: transparent;
     justify-content: center;
-    margin: auto;
-    border-bottom: solid 150px white;
-    text-align: center;
+    border: solid 1px rgb(223, 0, 0);
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.seccion4-derecha {
+    display: flex;
+    background: url(/imagenes/quienes-somos1.jpg) center;
+    background-size: 100%;
+    width: 400px;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 15px;
+    /* display: inline-block; */
+    /* float: left; */
+    /* display: inline-block; */
 }
 
 .texto-seccion4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     /* background-color: gray; */
-    width: 20%;
-    /* height: 400px; */
+    width: 500px;
+    height: 200px;
     /* float: left; */
     /* padding-left: 70px; */
     /* padding-right: 70px; */
-    padding-top: 80px;
-    display: inline-block;
-    vertical-align: top;
+    /* padding-top: 80px; */
+    /* display: inline-block; */
+    /* vertical-align: top; */
 }
 
 .texto-seccion4 h1 {
-    padding-bottom: 20px;
+    display: flex;
+    /* padding-bottom: 20px; */
 }
 
 .texto-seccion4 p {
-    padding-bottom: 20px;
+    display: flex;
+    /* padding-bottom: 20px; */
 }
 
 .texto-seccion4 h3 {
-    padding-bottom: 20px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    /* padding-bottom: 20px; */
+    /* text-align: center; */
 }
 
 .texto-seccion4 a {
@@ -382,19 +522,7 @@ header {
 }
 
 .texto-seccion4 a:hover {
-    background-color: #925800;
-}
-
-.seccion4-derecha {
-    background: url(/imagenes/quienes-somos1.jpg) center;
-    background-size: 100%;
-    width: 30%;
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    /* display: inline-block; */
-    /* float: left; */
-    display: inline-block;
+    background-color: rgb(143, 143, 143);
 }
 
 .contenedor-texto-seccion4 .contenedor-texto-seccion4 {
