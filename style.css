@@ -9,7 +9,7 @@ html {
 
 body {
     background-color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif, Arial, Helvetica;
 }
 
 #container {
@@ -28,7 +28,7 @@ header {
     position: fixed;
     background-color: white;
     border-radius: 1px;
-    box-shadow: 0 0 15px teal;
+    box-shadow: 0 0 5px #ffcc00;
     width: 100%;
     z-index: 1;
 }
@@ -93,13 +93,13 @@ header {
 }
 
 .navegacion a:hover {
-    color: orange;
-    background: #2080c0;
+    /* color: orange; */
+    background: #00bcd4;
     /* border-bottom: solid 2px cadetblue; */
 }
 
 #ingresar {
-    background-color: orange;
+    background-color: #ffcc00;
     border-radius: 15px;
     color: black;
     padding: 1px;
@@ -173,7 +173,7 @@ header {
 }
 
 .navegacion ul ul li a:hover {
-    background-color: #2980B9;
+    background-color: #00bcd4;
     transition: 0.5s;
 }
 
@@ -191,7 +191,7 @@ header {
 /* slide */
 
 .slide-contenedor {
-    width: 95%;
+    width: 100%;
     margin: auto;
     overflow: hidden;
 }
@@ -282,7 +282,7 @@ header {
 }
 
 .texto-h3-portadaheader a {
-    background-color: #ff9900;
+    /* background-color: #ff9900; */
     font-size: 16px;
     padding-left: 30px;
     padding-right: 30px;
@@ -294,10 +294,11 @@ header {
     /* box-shadow: 0 0 15px rgb(255, 132, 0); */
 }
 
-.texto-h3-portadaheader a:hover {
-    background-color: #5e9bc4;
+
+/* .texto-h3-portadaheader a:hover {
+    background-color: #ff9900;
     transition-duration: 0.3s;
-}
+} */
 
 .botton-cotizar1 {
     color: white;
@@ -312,17 +313,17 @@ header {
     padding-right: 50px;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-radius: 20px;
+    border-radius: 15px;
     text-decoration: none;
     color: black;
     /* box-shadow: 0 0 15px teal; */
     border: solid 1px black;
-    background-color: #5e9bc4;
+    background-color: #ffcc00;
 }
 
 .botton-cotizar1 a:hover {
     background-color: transparent;
-    background-color: #2080c0;
+    background-color: #00bcd4;
     transition-duration: 0.3s;
 }
 
@@ -381,6 +382,7 @@ header {
     right: 0;
     display: flex;
     flex-wrap: wrap;
+    /* background-color: #00bcd4; */
 }
 
 .contenedor-imagen-seccion3 .seccion div {
@@ -389,17 +391,18 @@ header {
     width: 250px;
     height: 250px;
     border-left-width: 0px;
-    box-shadow: 0 0 15px rgb(114, 114, 114);
+    box-shadow: 0 0 5px rgb(114, 114, 114);
     /* top: -50px; */
     left: 0;
     right: 0;
     /* margin: 5px; */
     background-color: white;
-    position: relative;
-    border: solid 1px gray;
+    /* border: solid 1px gray; */
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    margin: 30px;
+    border-radius: 5px;
 }
 
 .contenedor-imagen-seccion3 div img {
@@ -415,7 +418,7 @@ header {
 
 .contenedor-imagen-seccion3 div .titulo {
     color: rgb(0, 0, 0);
-    background-color: #ff9900;
+    /* background-color: #ff9900; */
     padding-left: 15px;
     padding-right: 15px;
     font-weight: bolder;
@@ -429,11 +432,14 @@ header {
     /* height: 100%; */
     /* position: absolute; */
     display: flex;
+    /* background-color: #00bcd4; */
 }
 
 .contenedor-imagen-seccion3 .seccion div:hover {
     transition-duration: 00.3s;
-    box-shadow: 0 0 30px orange;
+    box-shadow: 0 0 20px #00bcd4;
+    /* border: solid 5px #00bcd4; */
+    margin-top: 5px;
     /* border-bottom: solid 10px orange; */
 }
 
@@ -493,6 +499,7 @@ header {
     /* background-color: gray; */
     width: 500px;
     height: 200px;
+    margin-top: 30px;
     /* float: left; */
     /* padding-left: 70px; */
     /* padding-right: 70px; */
@@ -519,11 +526,11 @@ header {
 }
 
 .texto-seccion4 a {
-    background-color: #ff9900;
+    background-color: #ffcc00;
 }
 
 .texto-seccion4 a:hover {
-    background-color: rgb(143, 143, 143);
+    background-color: #00bcd4
 }
 
 .contenedor-texto-seccion4 .contenedor-texto-seccion4 {
@@ -767,7 +774,96 @@ footer {
 }
 
 
-/* ----------------------------- */
+/* -----------------------------
 
+pagina quienes somos
 
-/* ---------------------------------- */
+---------------------------------- */
+
+#main-doc {
+    /* justify-content: center; */
+    display: flex;
+    margin: auto;
+}
+
+.main-section-1 {
+    width: 20%;
+    background-color: #76c4ce79;
+    text-align: center;
+    position: fixed;
+    height: 100%;
+    font-size: 20px;
+    border: solid 1px #00bcd4;
+    border-radius: 10px;
+}
+
+.main-section-2 {
+    width: 80%;
+    /* background-color: chartreuse; */
+    text-align: left;
+    display: flex;
+    display: block;
+    margin-left: 338px;
+    font-size: 20px;
+    padding: 3%;
+}
+
+#titulo-section-2 {
+    font-size: 50px;
+}
+
+#header-section-1 {
+    border-bottom: solid 1px black;
+    /* margin-bottom: 40px; */
+}
+
+#nav-link {
+    text-decoration: none;
+    padding: 0;
+}
+
+#item-nav-link {
+    border-bottom: solid 1px black;
+    list-style: none;
+    text-decoration: none;
+    display: block;
+    height: 40px;
+    text-align: left;
+    color: black;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+#item-nav-link:hover {
+    background-color: #00bcd4;
+}
+
+#cuadro-1 {
+    border: solid 1px black;
+    width: 700px;
+    margin-left: 50px;
+    background-color: blanchedalmond;
+    padding: 20px;
+}
+
+@media (max-width: 975px) {
+    #cuadro-1 {
+        width: 400px;
+    }
+}
+
+#Nuestra_Historia {
+    padding-top: 80px;
+}
+
+#Mision {
+    padding-top: 80px;
+}
+
+#Vision {
+    padding-top: 80px;
+}
+
+#Valores {
+    padding-top: 80px;
+}
