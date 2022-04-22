@@ -10,6 +10,7 @@ html {
 body {
     background-color: white;
     font-family: sans-serif, Arial, Helvetica;
+    scroll-behavior: smooth;
 }
 
 #container {
@@ -741,14 +742,47 @@ header {
 /* -------------------------------------------------- */
 
 footer {
-    float: left;
-    left: 50px;
+    /* float: left; */
+    /* left: 50px; */
     width: 100%;
-    height: 50px;
+    /* height: 200px; */
     background: 50px black;
     color: white;
-    text-align: center;
+    /* text-align: center; */
     padding: 0px;
+    z-index: 3;
+}
+
+#footer_contactos {
+    display: flex;
+    justify-content: center;
+    border-bottom: solid 1px grey;
+}
+
+#seccion-contactos,
+#seccion-horario,
+#seccion-redes {
+    margin: 30px 60px 30px 60px;
+    width: 240px;
+    font-size: 15px;
+    font-family: Helvetica, sans-serif;
+}
+
+#seccion-contactos h2,
+#seccion-horario h2,
+#seccion-redes h2 {
+    color: #00bcd4;
+}
+
+#seccion-contactos p {
+    display: flex;
+}
+
+#derechos-reservados {
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    align-items: center;
 }
 
 #productos li {
@@ -788,12 +822,12 @@ pagina quienes somos
 
 .main-section-1 {
     width: 20%;
-    background-color: #76c4ce79;
+    background-color: #00bcd4;
     text-align: center;
     position: fixed;
     height: 100%;
     font-size: 20px;
-    border: solid 1px #00bcd4;
+    /* border: solid 1px #00bcd4; */
     border-radius: 10px;
 }
 
@@ -823,19 +857,29 @@ pagina quienes somos
 }
 
 #item-nav-link {
-    border-bottom: solid 1px black;
+    border-bottom: solid 1px rgba(92, 92, 92, 0.467);
     list-style: none;
     text-decoration: none;
-    display: block;
-    height: 40px;
-    text-align: left;
+    display: flex;
+    height: 80px;
+    /* text-align: center; */
+    align-items: center;
+    justify-content: center;
     color: black;
-    padding-top: 20px;
-    padding-left: 20px;
+    /* padding-top: 20px; */
+    /* padding-left: 20px; */
+    /* box-shadow: 0 0 20px grey; */
+    background-color: rgb(169, 169, 169);
+}
+
+#item-nav-link:hover {
+    /* justify-content: left; */
+    font-size: 25px;
 }
 
 #item-nav-link:hover {
     background-color: #00bcd4;
+    transition: 0.80ms;
 }
 
 #cuadro-1 {
