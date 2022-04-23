@@ -1005,11 +1005,12 @@ label {
     width: 98%;
     margin-bottom: 10px;
     height: 40px;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 .textarea {
-    width: 99%;
+    width: 98%;
+    font-size: 17px;
 }
 
 #buttom {
