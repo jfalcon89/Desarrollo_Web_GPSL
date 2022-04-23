@@ -4,6 +4,8 @@
 <head>
     <meta charset="utf-8">
     <title>GPS Location Trackers</title>
+    <!-- efecto de scroll para los div -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="icon" href="/favicon/icono-favicon.png">
@@ -47,7 +49,7 @@
                             <li class="sub-item-menu-servicios"><a href="">Mobile</a></li>
                         </ul>
                     </li>
-                    <li class="item-menu"><a href="#">PREGUNTAS</a></li>
+                    <li class="item-menu"><a href="#">Preguntas</a></li>
                     <li class="item-menu"><a href="Contactos.html">Contactos</a></li>
                     <li class="item-menu"><a id="ingresar" href="https://us.tracksolidpro.com/mainFrame" target="_black">INGRESAR</a></li>
                 </ul>
@@ -90,7 +92,7 @@
 
         <div class="contenedor-imagen-seccion3">
             <div class="seccion">
-                <div>
+                <div data-aos="fade-right">
                     <img class="img-servicios" src="imagenes/servicios.jpg" alt="servicios">
                     <h3> Servicios</h3>
                     <!-- <div id="container-tex-card"> -->
@@ -100,7 +102,7 @@
                     <p>• Historial de recorrido</p>
                     <!-- </div> -->
                 </div>
-                <div>
+                <div data-aos="fade-left">
                     <img class="img-nosotros" src="imagenes/nosotros.jpg" alt="nosotros">
                     <h3> Nosotros</h3>
                     <p class="titulo">RECIBE ALERTAS EN VIVO</p>
@@ -108,7 +110,7 @@
                     <p>Encendido y Apagado remoto</p>
                     <p>Historial de recorrido</p>
                 </div>
-                <div>
+                <div data-aos="fade-right">
                     <img class="img-citas" src="imagenes/citas.jpg" alt="citas">
                     <h3> Citas</h3>
                     <p class="titulo">RECIBE ALERTAS EN VIVO</p>
@@ -116,7 +118,7 @@
                     <p>Encendido y Apagado remoto</p>
                     <p>Historial de recorrido</p>
                 </div>
-                <div>
+                <div data-aos="fade-left">
                     <img class="img-clientes" src="/imagenes/clientes.jpg" alt="clientes">
                     <h3> Clientes</h3>
                     <p class="titulo">RECIBE ALERTAS EN VIVO</p>
@@ -129,7 +131,7 @@
 
         <!-- seccion 4 -->
         <section class="contenedor-texto-seccion4">
-            <div class="seccion4-derecha"></div>
+            <div data-aos="fade-right" class="seccion4-derecha"></div>
             <div class="texto-seccion4">
                 <h1>Quienes Somos?</h1>
                 <p>GPS LOCATION TRACKERS Es una compañía de rastreo vehicular en tiempo real que brinda soluciones tecnológicas y oportuna a nuestros clientes brindándole la mejor experiencia y tranquilidad a la hora de rastrear sus flotas de vehículos.</p>
@@ -295,6 +297,15 @@
 
     </div>
 
+    <script src="/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: false,
+            mirror: false
+        });
+    </script>
 
 </body>
 

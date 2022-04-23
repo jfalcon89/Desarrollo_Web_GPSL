@@ -4,6 +4,8 @@
 <head>
     <meta charset="utf-8">
     <title>Quienes Somos</title>
+    <!-- efecto de scroll para los div -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="icon" href="/favicon/icono-favicon.png">
@@ -44,7 +46,7 @@
                             <li class="sub-item-menu-servicios"><a href="">Mobile</a></li>
                         </ul>
                     </li>
-                    <li class="item-menu"><a href="#">PREGUNTAS</a></li>
+                    <li class="item-menu"><a href="#">Preguntas</a></li>
                     <li class="item-menu"><a href="Contactos.html">Contactos</a></li>
                     <li class="item-menu"><a id="ingresar" href="https://us.tracksolidpro.com/mainFrame" target="_black">INGRESAR</a></li>
                 </ul>
@@ -59,8 +61,9 @@
 
             <section class="main-section-1">
 
-                <div id="nav-link">
-                    <a id="item-nav-link" class="item-nav-link-1" href="#Nuestra_Historia">Nuestra Historia</a>
+                <div data-aos="fade-up" id="nav-link">
+                    <a id="item-nav-link" href="#">Quienes Somos</a>
+                    <a id="item-nav-link" href="#Nuestra_Historia">Nuestra Historia</a>
                     <a id="item-nav-link" href="#Mision">Mision</a>
                     <a id="item-nav-link" href="#Vision">Vision</a>
                     <a id="item-nav-link" href="#Valores">Valores</a>
@@ -71,8 +74,8 @@
             </section>
             <section class="main-section-2">
                 <section class="contenedor-texto-seccion4">
-                    <div class="seccion4-derecha"></div>
-                    <div class="texto-seccion4">
+                    <div data-aos="fade-right" class="seccion4-derecha"></div>
+                    <div data-aos="fade-left" class="texto-seccion4">
                         <h1>Quienes Somos?</h1>
                         <p>GPS LOCATION TRACKERS Es una compañía de rastreo vehicular en tiempo real que brinda soluciones tecnológicas y oportuna a nuestros clientes brindándole la mejor experiencia y tranquilidad a la hora de rastrear sus flotas de vehículos.</p>
                         <h3 class="botton-cotizar1"><a href="#">COTIZAR AHORA</a></h3>
@@ -237,7 +240,15 @@
 
     </div>
 
-
+    <script src="/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: false,
+            mirror: false
+        });
+    </script>
 </body>
 
 </html>
